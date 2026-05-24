@@ -34,6 +34,12 @@ body {
     justify-content: center;
 }
 
+.quiz-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .red {
     background-color: var(--red);
 }
@@ -129,7 +135,7 @@ body {
 }
 
 /* --- site Work work experience --- */
-section#work-experience div {
+section#work-experience .half:last-of-type {
     display: block;
     /*padding: 20px;*/
 }
@@ -169,18 +175,65 @@ section#work-experience div {
     transform: rotate(90deg);
 }
 
+.one-box-hidden p {
+    padding: 10px 40px 0 40px;
+}
+
+.one-box-hidden ul {
+    margin: 0 auto;
+}
+
 /* --- site school --- */
 #school div.half:first-of-type {
     display: flex;
     justify-content: space-around;
 }
 
-.third-box {
+.hover-container {
     width: 200px;
     height: 80%;
 }
 
-div.third-box {
+.third-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--blue);
+    transition: transform 0.5s ease;
 }
+
+.hover-container:hover .third-box,
+.hover-container:hover .third-box h2,
+.hover-container:hover .education-content {
+    /* hm10 */
+    transform: rotateY(180deg);
+}
+
+div.third-box h2 {
+    margin-bottom: 0;
+}
+
+.hover-container:hover .third-box h2 {
+    display: none;
+}
+
+div.third-box .education-content {
+    margin: 0;
+    display: none;
+}
+
+.hover-container:hover .third-box .education-content {
+    display: block;
+}
+
+#school div.half img {
+    width: 200px;
+    height: 80%;
+    /* hm9 */
+    object-fit: cover;
+}
+
+
 

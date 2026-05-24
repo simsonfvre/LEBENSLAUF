@@ -7,3 +7,5 @@
 - hm6: https://getcssscan.com/css-box-shadow-examples
 - hm7: ChatGPT - Promt: "Ich möchte mit Javascript eine Funktion machen, welche mir beim Klicken eines Button-Elementes ein div-Element animiert ein- und ausblendet."
 - hm8: ChatGPT - Promt: "Jetzt geht es. Beim Klicken auf den Button will ich das IMG-Element jetzt noch mit einer transition um 180 Grad drehen."
+- hm9: Google - Promt: "css img skalieren"
+- hm10: ChatGPT - Promt: "HTML und CSS einen Dreheffekt von einem Div erzeugen"
