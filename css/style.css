@@ -128,7 +128,7 @@ body {
     display: none;
 }
 
-/* --- Site Work work experience --- */
+/* --- site Work work experience --- */
 section#work-experience div {
     display: block;
     /*padding: 20px;*/
@@ -169,8 +169,18 @@ section#work-experience div {
     transform: rotate(90deg);
 }
 
+/* --- site school --- */
+#school div.half:first-of-type {
+    display: flex;
+    justify-content: space-around;
+}
 
+.third-box {
+    width: 200px;
+    height: 80%;
+}
 
-
-/* --- Site school --- */
+div.third-box {
+    background-color: var(--blue);
+}
 
