@@ -1,0 +1,176 @@
+/*
+color black: #221D23
+color white: #FFF8F0
+color red: #A20021
+color orange: #D58936
+*/
+
+:root {
+    box-sizing: border-box;
+    --black: #221D23;
+    --white: #FFF8F0;
+    --red: #B23A48;
+    --blue: #28666E;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	background-color: var(--white);
+}
+
+.site {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    /*padding: 0 50px;*/
+}
+
+.half {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.red {
+    background-color: var(--red);
+}
+
+.blue {
+    background-color: var(--blue);
+}
+
+.white {
+    background-color: var(--white);
+}
+
+.displaynone {
+    display: none !important;
+}
+
+.std-box-shadow {
+    /* hm6  */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.quiz {
+    height: 0;
+}
+
+/* --- Site Persönliche Daten --- */
+#personal-data-container {
+    width: 500px;
+    height: 500px;
+    /* hf1 */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 25px;
+}
+
+.four-box {
+    width: 236px;
+    height: 236px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    /* hm4 */
+    transition: transform 0.5s;
+}
+
+/* hm4 */
+.four-box:hover {
+    transform: scale(1.1);
+}
+
+/* Persönliche Daten */
+#personal-data:hover {
+    width: 500px;
+    height: 500px;
+}
+
+/* Kontaktangaben */
+#contact:hover {
+    width: 500px;
+    height: 500px;
+}
+
+/* Hobbies & Interessen */
+#hobbies:hover {
+    width: 500px;
+    height: 500px;
+}
+
+/* Qualifikationen */
+#quali:hover {
+    width: 500px;
+    height: 500px;
+}
+
+.four-box-content {
+    display: none;
+}
+
+.four-box:hover .four-box-content {
+    display: block;
+    margin: 20px;
+}
+
+.four-box-icon {
+    width: 150px;
+    height: 150px;
+}
+
+.four-box:hover .four-box-icon {
+    display: none;
+}
+
+/* --- Site Work work experience --- */
+section#work-experience div {
+    display: block;
+    /*padding: 20px;*/
+}
+
+.one-box-hidden {
+    width: 100%;
+    height: 41%;
+    overflow: hidden;
+    transition: max-width 0.3s ease;
+}
+
+.one-box-hidden.closed {
+    width: 0;
+    height: 0;
+}
+
+.one-box {
+    width: 100%;
+    /* hm5 */
+    height: 10%;
+    border: none;
+    padding: 40px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.one-box img {
+    height: 40px;
+    width: 40px;
+    transform: rotate(-90deg);
+    transition: transform 0.3s ease;
+}
+
+.one-box img.rotated {
+    transform: rotate(90deg);
+}
+
+
+
+
+/* --- Site school --- */
+
