@@ -9,3 +9,8 @@
 - hm8: ChatGPT - Promt: "Jetzt geht es. Beim Klicken auf den Button will ich das IMG-Element jetzt noch mit einer transition um 180 Grad drehen."
 - hm9: Google - Promt: "css img skalieren"
 - hm10: ChatGPT - Promt: "HTML und CSS einen Dreheffekt von einem Div erzeugen"
+- hm11: ChatGPT - Promt: "Ich habe drei Sections. Diese füllen jeweils 100% der Viewort-Höhe aus. Gibt es eine Möglichkeit, dass ich beim Scrollen automatisch zur nächsten Section "einraste"? So dass das Scrollen auf der Seite dazu führt, dass man jeweils zwischen den Sections hin und her Scrollen kann, welche dann immer automatisch 100% der Viewport-Höhe einnehmen?"
+- hm12: ChatGPT - Promt: "Ich habe 3 Button-Elemente. Wie kann ich nun unterscheiden, dass wenn ein Button mit einer bestimmten ID angeklickt wird, ein Text mit dem Inhalt "Korrekt!" angezeigt wird, während ein Klick auf einen falschen Button den Text "Falsch!" bringt?"
+- hm13: ChatGPT - Promt: "Wie kann man in JS eine beliebige Zahl zwischen 1 und 10 generieren?"
+- hm14: ChatGPT - Promt: "Der Browser merkt sich die letzte Eingabe. Kann ich beim Neu-Laden der Seite das input-Feld leer setzen?"
+- hm15: ChatGPT - Promt: "value === '' geht noch nicht mit parseInt(input.value)"

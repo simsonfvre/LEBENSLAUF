@@ -13,91 +13,94 @@
         <div id="personal-data-container">
             <div id="personal-data" class="four-box red std-box-shadow">
                 <div class="four-box-content">
-                    <p>
-                        <h1>Persönliche Daten</h1>
-                        <strong>Name</strong>
-                        </br>
-                        Simon Jan Faivre
-                        </br>
-                        <strong>Adresse</strong>
-                        </br>
-                        Musterstrasse 1
-                        1234 Musterstadt
-                        </br>
-                        <strong>Heimatort</strong>
-                        </br>
-                        Musterdorf
-                        </br>
-                        <strong>Nationalität</strong>
-                        </br>
-                        Schweiz
-                    </p>
+                    <h1>Persönliche Daten</h1>
+                    <strong>Name</strong>
+                    <br>
+                    Simon Jan Faivre
+                    <br>
+                    <strong>Adresse</strong>
+                    <br>
+                    Musterstrasse 1
+                    1234 Musterstadt
+                    <br>
+                    <strong>Heimatort</strong>
+                    <br>
+                    Musterdorf
+                    <br>
+                    <strong>Nationalität</strong>
+                    <br>
+                    Schweiz
                 </div>
                 <img class="four-box-icon" src="assets/img/user.png" alt="User-Icon">
             </div>
             <div id="contact" class="four-box blue std-box-shadow">
                 <div class="four-box-content">
-                    <p>
-                        <h1>Kontaktangaben</h1>
-                        <strong>Telefon</strong>
-                        </br>
-                        077 445 29 39
-                        </br>
-                        <strong>E-Mail</strong>
-                        </br>
-                        simon.faivre@hftm.ch
-                    </p>
+                    <h1>Kontaktangaben</h1>
+                    <strong>Telefon</strong>
+                    <br>
+                    077 445 29 39
+                    <br>
+                    <strong>E-Mail</strong>
+                    <br>
+                    simon.faivre@hftm.ch
                 </div>
                 <img class="four-box-icon" src="assets/img/telephone.png" alt="Telefon-Icon">
             </div>
             <div id="hobbies" class="four-box blue std-box-shadow">
                 <div class="four-box-content">
-                    <p>
-                        <h1>Hobbies & Interessen</h1>
-                        <ul>
-                            <li>Kraftsport</li>
-                            <li>Jogging</li>
-                            <li>Philosophie</li>
-                            <li>Technik</li>
-                            <li>Wissenschaft</li>
-                            <li>Freunde & Familien</li>
-                        </ul>
-                    </p>
+                    <h1>Hobbies & Interessen</h1>
+                    <ul>
+                        <li>Kraftsport</li>
+                        <li>Jogging</li>
+                        <li>Wandern</li>
+                        <li>Philosophie</li>
+                        <li>Technik</li>
+                        <li>Wissenschaft</li>
+                        <li>Freunde & Familien</li>
+                    </ul>
                 </div>
                 <img class="four-box-icon" src="assets/img/hobby.png" alt="Hobby-Icon">
             </div>
             <div id="quali" class="four-box red std-box-shadow">
                 <div class="four-box-content">
-                    <p>
-                        <h1>Qualifikiationen</h1>
-                        <strong class="four-box-txt">Sprachen</strong>
-                        <ul>
-                            <li>Deutsch: Muttersprache</li>
-                            <li>Französisch: gute mündliche und schriftliche Kenntnisse</li>
-                            <li>Englisch: gute mündliche und schriftliche Kenntnisse</li>
-                        </ul>
-                        <strong>Informatik</strong>
-                        <ul>
-                            <li>MS Office: gute Kenntnisse</li>
-                            <li>Java: leichte Kenntnisse</li>
-                            <li>HTML & CSS: gute gute Kenntnisse</li>
-                        </ul>
-                    </p>
+                    <h1>Qualifikiationen</h1>
+                    <strong class="four-box-txt">Sprachen</strong>
+                    <ul>
+                        <li>Deutsch: Muttersprache</li>
+                        <li>Französisch: gute mündliche und schriftliche Kenntnisse</li>
+                        <li>Englisch: gute mündliche und schriftliche Kenntnisse</li>
+                    </ul>
+                    <strong>Informatik</strong>
+                    <ul>
+                        <li>MS Office: gute Kenntnisse</li>
+                        <li>Java: leichte Kenntnisse</li>
+                        <li>HTML & CSS: gute gute Kenntnisse</li>
+                    </ul>
                 </div>
                <img class="four-box-icon" src="assets/img/stamp.png" alt="Stempel-Icon">
             </div>
-            </div>
-
         </div>
     </div>
     <div class="half quiz-section red std-box-shadow">
         <h1>Quiz 1</h1>
+        <h2>Welches sind die ersten fünf Nachkommastellen von Pi?</h2>
+        <button id="quiz-1-1-btn" class="quiz-1-button std-box-shadow">14290</button>
+        <button id="quiz-1-2-btn" class="quiz-1-button std-box-shadow">14150</button>
+        <button id="quiz-1-3-btn" class="quiz-1-button std-box-shadow">14159</button>
+        <p id="quiz-one-result"></p>
     </div>
 </section>
 
 <section id="work-experience" class="site">
     <div class="half quiz-section red std-box-shadow">
         <h1>Quiz 2</h1>
+        <h2>Errate die Zahl zwischen 1 und 10!</h2>
+        <!-- hm14 -->
+        <form autocomplete="off">
+            <input type="number" id="quiz-2-input" class="std-box-shadow" value="">
+        </form>
+        <button id="quiz-2-btn" class="std-box-shadow">Raten</button>
+        <p id="quiz-two-result"></p>
     </div>
     <div class="half std-box-shadow">
         <button class="one-box blue std-box-shadow">
@@ -144,7 +147,7 @@
                 <li>sfevg</li>
             </ul>
         </div>
-        <button class="one-box quiz-section red std-box-shadow">
+        <button class="one-box red std-box-shadow">
             <img src="assets/img/arrow.png">
             <h1>Beruf 4</h1>
         </button>
@@ -172,7 +175,6 @@
                 <li>dcdc</li>
             </ul>
         </div>
-
     </div>
 </section>
 
@@ -187,7 +189,8 @@
                             <ul>
                                 <li>Punkt 1</li>
                                 <li>Punkt 2</li>
-                                <li>Punkt 3 </li>
+                                <li>Punkt 3</li>
+                                <li>Punkt 4</li>
                             </ul>
                         </li>
                         <li>Arbeit 2
@@ -213,6 +216,7 @@
                             <ul>
                                 <li>Punkt 1</li>
                                 <li>Punkt 2</li>
+                                <li>Punkt 3</li>
                             </ul>
                         </li>
                     </ul>
@@ -235,6 +239,10 @@
     </div>
     <div class="half quiz-section red std-box-shadow">
         <h1>Quiz 3</h1>
+        <h2>Spielt Simu gerne Ice-Hockey?</h2>
+        <button id="quiz-3-1-btn" class="std-box-shadow">Ja</button>
+        <button id="quiz-3-2-btn" class="std-box-shadow">Nein</button>
+        <p id="quiz-three-result"></p>
     </div>
 </section>
 </body>
