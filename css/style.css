@@ -9,10 +9,9 @@ color orange: #D58936
     box-sizing: border-box;
     font-size: 0.9em;
     /* colors */
-    --black: #221D23;
-    --white: #FFF8F0;
-    --red: #B23A48;
-    --blue: #28666E;
+    --white: #F5EFFB;
+    --color-1: #567C8D;
+    --color-2: #C8D9E6;
 }
 
 /* hm11 */
@@ -28,12 +27,12 @@ body {
 	background-color: var(--white);
 }
 
-.red {
-    background-color: var(--red);
+.color-1 {
+    background-color: var(--color-1);
 }
 
-.blue {
-    background-color: var(--blue);
+.color-2 {
+    background-color: var(--color-2);
 }
 
 .white {
@@ -47,6 +46,14 @@ body {
 .std-box-shadow {
     /* hm6  */
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+/* hm16 */
+#blocked-one,
+#blocked-two,
+#blocked-three {
+    filter: blur(10px);
+    pointer-events: none;
 }
 
 .site {
@@ -80,7 +87,7 @@ body {
 }
 
 .quiz-section button:active {
-    background-color: var(--blue);
+    background-color: var(--color-2);
 }
 
 .quiz-section p {
@@ -208,7 +215,7 @@ section#work-experience .half:last-of-type {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--blue);
+    background-color: var(--color-2);
     transition: transform 0.5s ease;
 }
 
@@ -236,11 +243,66 @@ div.third-box .education-content {
     display: block;
 }
 
-#school div.half img {
+#school div.half img.third-box {
     width: 200px;
     height: 80%;
     /* hm9 */
     object-fit: cover;
+}
+
+/* Login site */
+#login-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+}
+
+#login-panel {
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+    background-color: var(--color-1);
+}
+
+#login-panel h1 {
+    text-align: center;
+    padding-top: 50px;
+}
+
+#login-panel form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#login-panel input {
+    width: 100%;
+    height: 30px;
+    align-self: center;
+    margin-bottom: 10px;
+    border: none;
+    background-color: var(--white);
+}
+
+#login-panel button {
+    width: 100px;
+    height: 30px;
+    font-size: 1.2em;
+    margin: 10px;
+    border: none;
+    background-color: var(--white);
+}
+
+#login-panel button:active {
+    background-color: var(--color-2);
+}
+
+#login-panel p {
+    text-align: center;
+    font-size: 1.2em;
 }
 
 

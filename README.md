@@ -14,3 +14,5 @@
 - hm13: ChatGPT - Promt: "Wie kann man in JS eine beliebige Zahl zwischen 1 und 10 generieren?"
 - hm14: ChatGPT - Promt: "Der Browser merkt sich die letzte Eingabe. Kann ich beim Neu-Laden der Seite das input-Feld leer setzen?"
 - hm15: ChatGPT - Promt: "value === '' geht noch nicht mit parseInt(input.value)"
+- hm16: ChatGPT - Promt: "Wie kann man einem DIV-Element mit CSS angeben, dass der Content leicht verschwommen dargestellt werden soll und nicht klickbar ist. Wenn eine bestimmte Klasse gesetzt ist, will ich das DIV "sperren"."
+- hm17: ChatGPT - Promt: "Wie kann man durch das Drücken auf einen Button eine andere Seite öffnen? Die Seite ist simu.html und das Ganze wird dann zu Testzwecken auf GitHub gehostet."

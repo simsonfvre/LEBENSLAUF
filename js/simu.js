@@ -1,3 +1,4 @@
+// Section 1 - Personal Data
 // hm2
 const boxes = document.querySelectorAll('.four-box');
 
@@ -16,6 +17,7 @@ boxes.forEach(box => {
     });
 });
 
+// Section 2 - work experience
 // hm7 & hm8
 const buttons = document.querySelectorAll('.one-box');
 const panels = document.querySelectorAll('.one-box-hidden');
@@ -57,11 +59,12 @@ quizOneButtons.forEach(button => {
 
         if (button.id === 'quiz-1-3-btn') {
             resultOne.innerHTML =
-                `<img src="assets/img/check-button.png" alt="Korrekt" width="20">Richtig!`;
+                `<img src="assets/img/check-button.png" alt="Korrekt" width="20"> Richtig!`;
             quizOneChecked = true;
+            removeBlocking();
         } else {
             resultOne.innerHTML =
-                `<img src="assets/img/wrong.png" alt="Falsch" width="20">Falsch!`;
+                `<img src="assets/img/wrong.png" alt="Falsch" width="20"> Falsch!`;
         }
     });
 });
@@ -85,21 +88,54 @@ quizTwoButton.addEventListener('click', () => {
         resultTwo.textContent = 'Bitte eine gültige Zahl eingeben!';
     } else if (value === number) {
         resultTwo.innerHTML =
-            `<img src="assets/img/check-button.png" alt="Korrekt" width="20">Richtig!`;
+            `<img src="assets/img/check-button.png" alt="Korrekt" width="20"> Richtig!`;
         quizTwoChecked = true;
+        removeBlocking();
     } else if (value < number) {
         resultTwo.innerHTML =
-            `<img src="assets/img/wrong.png" alt="Falsch" width="20">Zahl ist zu klein!`;
+            `<img src="assets/img/wrong.png" alt="Falsch" width="20"> Zahl ist zu klein!`;
     } else if (value > number) {
         resultTwo.innerHTML =
-            `<img src="assets/img/wrong.png" alt="Falsch" width="20">Zahl ist zu gross!`;
+            `<img src="assets/img/wrong.png" alt="Falsch" width="20"> Zahl ist zu gross!`;
         // hm15
     } else if (isNaN(value) || value < 1 || value > 10) {
         resultTwo.textContent = 'Bitte eine gültige Zahl eingeben!';
     }
 });
 
-
 // Quiz 3
 let quizThreeChecked;
+const quizThreeBtn1 = document.getElementById('quiz-3-1-btn');
+const quizThreeBtn2 = document.getElementById('quiz-3-2-btn');
+const resultThree = document.getElementById('quiz-three-result');
+
+quizThreeBtn1.addEventListener("click", () => {
+    resultThree.innerHTML =
+        `<img src="assets/img/wrong.png" alt="Falsch" width="20"> Nee!`;
+});
+
+quizThreeBtn2.addEventListener("click", () => {
+    resultThree.innerHTML =
+        `<img src="assets/img/check-button.png" alt="Korrekt" width="20"> Richtig!`;
+    quizThreeChecked = true;
+    removeBlocking();
+
+});
+
+// Unblocking content
+function removeBlocking() {
+    if (quizOneChecked) {
+        document.getElementById('blocked-one')?.removeAttribute('id');
+    }
+
+    if (quizTwoChecked) {
+        document.getElementById('blocked-two')?.removeAttribute('id');
+    }
+
+    if (quizThreeChecked) {
+        document.getElementById('blocked-three')?.removeAttribute('id');
+    }
+}
+
+
 
