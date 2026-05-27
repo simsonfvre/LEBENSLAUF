@@ -403,6 +403,20 @@ div.third-box .education-content {
 }
 
 @media (max-width: 576px) {
+    :root {
+        font-size: 0.6em;
+    }
+
+    #personal-data-container {
+        width: 300px;
+        height: 300px;
+    }
+
+    .four-box:hover {
+        width: 300px;
+        height: 300px;
+    }
+
     #school div.half img.third-box {
         display: none;
     }
