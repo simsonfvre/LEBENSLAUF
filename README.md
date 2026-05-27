@@ -1,3 +1,4 @@
+Password: pwd
 # Hilfsmittel
 - hm1: ChatGPT - Promt: "Ich habe 4 divs. Wie kann ich mit display-grid diese in einem Container in einem 2x2-Layout darstellen?"
 - hm2: ChatGPT - Promt: "Ich brauche eine JavaScript-Funktion. Die Ausgangslage: ich habe 4 divs, welche Geschwisterelemente sind. Beim Hovern über eines der Divs sollen die benachbarten Divs die CSS-Klasse "displaynone" erhalten. Das soll für jedes dieser 4 divs gelten. Wie geht das?"
