@@ -122,7 +122,6 @@ body {
     font-size: 1.2em;
 }
 
-
 /* hm4 */
 .four-box:hover {
     width: 500px;
@@ -205,7 +204,7 @@ section#work-experience .half:last-of-type {
 }
 
 .hover-container {
-    width: 200px;
+    width: 190px;
     height: 80%;
 }
 
@@ -244,7 +243,7 @@ div.third-box .education-content {
 }
 
 #school div.half img.third-box {
-    width: 200px;
+    width: 190px;
     height: 80%;
     /* hm9 */
     object-fit: cover;
@@ -303,6 +302,86 @@ div.third-box .education-content {
 #login-panel p {
     text-align: center;
     font-size: 1.2em;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+    :root {
+        font-size: 0.8em;
+    }
+
+    .site {
+        width: 100%;
+        height: 100%;
+        display: block;
+        scroll-snap-align: unset;
+    }
+
+    .half {
+        width: 100%;
+        height: 100vh;
+        scroll-snap-align: start;
+    }
+
+    #personal-data-container {
+        width: 600px;
+        height: 600px;
+    }
+
+    .four-box:hover {
+        width: 600px;
+        height: 600px;
+    }
+
+    .one-box-hidden {
+        width: 100%;
+        height: 35%;
+        overflow: hidden;
+        transition: max-width 0.3s ease;
+    }
+
+    .one-box-hidden.closed {
+        width: 0;
+        height: 0;
+    }
+
+    .one-box-hidden p {
+        padding: 0 0 0 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        font-size: 0.7em;
+    }
+
+    #personal-data-container {
+        width: 400px;
+        height: 400px;
+    }
+
+    .four-box:hover {
+        width: 400px;
+        height: 400px;
+    }
+
+    .half h2 {
+        text-align: center;
+    }
+
+    .hover-container {
+        width: 180px;
+    }
+
+    #school div.half img.third-box {
+        width: 180px;
+    }
+}
+
+@media (max-width: 576px) {
+    #school div.half img.third-box {
+        display: none;
+    }
 }
 
 
