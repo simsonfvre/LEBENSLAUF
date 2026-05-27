@@ -27,6 +27,11 @@ body {
 	background-color: var(--white);
 }
 
+h2 {
+    padding: 0 10px;
+    text-align: center;
+}
+
 .color-1 {
     background-color: var(--color-1);
 }
@@ -348,6 +353,11 @@ div.third-box .education-content {
     .one-box-hidden p {
         padding: 0 0 0 10px;
     }
+
+    #login-panel {
+        width: 50%;
+        height: 50%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -375,6 +385,20 @@ div.third-box .education-content {
 
     #school div.half img.third-box {
         width: 180px;
+    }
+
+    #login-panel input {
+        width: 60%;
+    }
+
+    #login-panel h1 {
+        font-size: 3em;
+    }
+
+    #login-panel button {
+        width: 60%;
+        height: 50px;
+        font-size: 2em;
     }
 }
 
