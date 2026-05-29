@@ -145,8 +145,8 @@ h2 {
 }
 
 .four-box-icon {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
 }
 
 .four-box:hover .four-box-icon {
@@ -368,6 +368,12 @@ div.third-box .education-content {
     #personal-data-container {
         width: 400px;
         height: 400px;
+    }
+
+    .four-box-icon {
+        width: 130px;
+        height: 130px;
+        margin: 10px;
     }
 
     .four-box:hover {
